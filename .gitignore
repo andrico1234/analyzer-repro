@@ -1,0 +1,46 @@
+## editors
+/.idea
+/.vscode
+
+## system files
+.DS_Store
+
+## npm
+node_modules/
+.eslintcache
+packages/**/lib*
+/npm-debug.log
+
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+## testing
+/coverage/
+
+## temp folders
+/.tmp/
+
+# build
+docs/dist
+
+/site/_site/
+/out-tsc/
+tsconfig.tsbuildinfo
+
+# errors
+yarn-error.log
+
+.env
+
+storybook-static
+storybook_preview.zip
+.storybook/static
+
+# Local Netlify folder
+.netlify
+

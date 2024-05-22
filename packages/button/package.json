@@ -1,0 +1,16 @@
+{
+  "name": "@a2000/button",
+  "description": "A2K Button",
+  "license": "MIT",
+  "author": "Andrico Karoulla",
+  "version": "0.0.9",
+  "main": "lib/src/index.js",
+  "module": "lib/src/index.js",
+  "exports": {
+    ".": "./lib/src/index.js",
+    "./a2k-button.js": "./lib/src/a2k-button.js"
+  },
+  "dependencies": {
+    "@open-wc/form-control": "0.5.0"
+  }
+}

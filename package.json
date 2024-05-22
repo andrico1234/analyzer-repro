@@ -1,0 +1,58 @@
+{
+  "name": "@a2000/root",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -b ./tsconfig.packages.json",
+    "analyze": "node ./scripts/analyze.mjs"
+  },
+  "workspaces": [
+    "packages/*",
+    "docs",
+    "site"
+  ],
+  "author": "Andrico Karoulla",
+  "license": "ISC",
+  "dependencies": {
+    "@custom-elements-manifest/analyzer": "^0.10.2",
+    "lit": "^2.6.1"
+  },
+  "devDependencies": {
+    "@open-wc/create": "^0.38.68",
+    "@open-wc/form-helpers": "0.2.0",
+    "@open-wc/testing": "^3.1.7",
+    "@types/svg-parser": "^2.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.48.2",
+    "@typescript-eslint/parser": "5.48.2",
+    "eslint": "^8.32.0",
+    "eslint-plugin-storybook": "^0.6.10",
+    "eslint-plugin-wc": "^1.4.0",
+    "glob": "^8.1.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.5",
+    "prettier": "^2.8.3",
+    "svg-parser": "^2.0.4",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4"
+  },
+  "description": "",
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --cache --fix",
+    "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrico1234/windows-2000-ui-library.git"
+  },
+  "bugs": {
+    "url": "https://github.com/andrico1234/windows-2000-ui-library/issues"
+  },
+  "homepage": "https://github.com/andrico1234/windows-2000-ui-library#readme",
+  "packageManager": "yarn@3.2.0"
+}

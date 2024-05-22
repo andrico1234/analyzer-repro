@@ -1,0 +1,11 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./packages/icon-button/tsconfig.json"
+    },
+    {
+      "path": "./packages/marquee/tsconfig.json"
+    }
+  ]
+}
